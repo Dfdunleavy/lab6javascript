@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="stylesheet/style.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		var petName;
+		petName = prompt("Enter your dogs name")
+		
+		document.write("<h1>Is " + petName + " a puppy?</h1>"); //using HTML tags
+		
+		var dogage = parseInt(prompt("How old is " + petName + " in human years? \n(Enter a number only)"));
+		if(dogage<=2){
+			alert("Your dog is still a puppy");	
+		}else{
+			alert("Your dog is not a puppy");	
+		}
+		
+		document.write("<h3>How much do I spend on dog food?</h1>");
+		var dogFoodDays = parseInt(prompt("How many days does it take for " + petName + " to finish a can of dog food?"));
+		var dogFoodPrice = parseInt(prompt("How much does your can of dog food cost?"));
+		var totalCostOfFood = (365 / dogFoodDays) * dogFoodPrice;
+		alert("You spend €" + totalCostOfFood + " on dog food a year");
+		
+		document.write("<h3>Does " + petName + " deserve a treat?</h3>");
+		var goodBoy = parseInt(prompt("Is " + petName + " a good boy/girl?"));
+		
+	</script>
+  </head>
+  <body>
+	<p>Is my dog a puppy</p>
+	<a href="js-index.html">Back</a>
+	
+  </body>
+</html>
